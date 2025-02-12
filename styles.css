@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	background-color: #f7c0d6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	color: #fff;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
+	padding: 30px 40px;
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4);
+	width: 90%;
+	max-width: 600px;
+	position: relative;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #ffb3d9;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.message {
+	font-size: 1.25rem;
+	line-height: 1.8;
+	color: #fff;
+	margin-bottom: 20px;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+.gif-container {
+	margin-bottom: 30px;
+	animation: zoomIn 1s ease-in-out;
+}
+
+.gif {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 20px;
+}
+
+.btn {
+	background-color: #ff5c8a;
+	color: white;
+	font-size: 18px;
+	padding: 15px 35px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: #ff4a75;
+	transform: scale(1.1);
+}
+
+.footer {
+	margin-top: 30px;
+	font-size: 1rem;
+	color: #ffb3d9;
+	font-style: italic;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Styling for hearts and the container */
+.hearts-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.heart {
+	font-size: 30px;
+	color: #ff4b5c;
+	margin: 5px;
+	opacity: 0;
+	transform: scale(0);
+	animation: scaleHeart 0.5s forwards;
+}
+
+@keyframes scaleHeart {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
