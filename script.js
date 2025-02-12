@@ -17,7 +17,7 @@ function addHearts() {
 
 	// Check if the container already has 10 hearts, limit the maximum number
 	if (heartsContainer.children.length >= 6) {
-		alert("The heart is full! 💖");
+		alert("My heart is so full right now babe! 💖");
 		return;
 	}
 
